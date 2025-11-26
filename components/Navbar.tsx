@@ -10,11 +10,14 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-50 bg-black text-white shadow-lg border-b border-gold-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          
+
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <NavLink to="/" className="font-serif text-2xl md:text-3xl text-gold-400 font-bold tracking-wider">
-              Nanass <span className="text-white text-lg font-light">Hair & Guide</span>
+            <NavLink to="/" className="flex items-center gap-3 font-serif text-2xl md:text-3xl text-gold-400 font-bold tracking-wider">
+              <img src="/images/Logo.png" alt="Nanass Logo" className="h-10 w-auto object-contain" />
+              <span>
+                Nanass <span className="text-white text-lg font-light">Hair & Guide</span>
+              </span>
             </NavLink>
           </div>
 
@@ -25,8 +28,7 @@ const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-sm uppercase tracking-widest hover:text-gold-400 transition-colors duration-200 ${
-                    isActive ? 'text-gold-400 font-bold border-b-2 border-gold-400 pb-1' : 'text-gray-300'
+                  `text-sm uppercase tracking-widest hover:text-gold-400 transition-colors duration-200 ${isActive ? 'text-gold-400 font-bold border-b-2 border-gold-400 pb-1' : 'text-gray-300'
                   }`
                 }
               >
@@ -57,8 +59,7 @@ const Navbar: React.FC = () => {
                 to={item.path}
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `block px-3 py-2 rounded-md text-base font-medium ${
-                    isActive ? 'text-gold-400 bg-zinc-800' : 'text-gray-300 hover:text-white hover:bg-zinc-800'
+                  `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'text-gold-400 bg-zinc-800' : 'text-gray-300 hover:text-white hover:bg-zinc-800'
                   }`
                 }
               >
