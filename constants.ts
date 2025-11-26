@@ -16,7 +16,8 @@ export const LATEST_ARTICLES: Article[] = [
     category: 'Cheveux',
     title: 'Comment faire pousser les cheveux rapidement (2025)',
     description: 'La méthode infaillible pour gagner des centimètres.',
-    imageUrl: '/images/hair_growth_guide.png'
+    imageUrl: '/images/hair_growth_guide.png',
+    link: '/article/croissance-2025'
   },
   {
     id: '2',

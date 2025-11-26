@@ -4,6 +4,7 @@ export interface Article {
   description: string;
   category: 'Cheveux' | 'Corps' | 'Ongles';
   imageUrl: string;
+  link?: string;
 }
 
 export interface Product {

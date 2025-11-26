@@ -8,6 +8,7 @@ import Shop from './pages/Shop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import AICoach from './components/AICoach';
+import ArticleGrowth from './pages/ArticleGrowth';
 import { HAIR_ARTICLES, BODY_ARTICLES, NAIL_ARTICLES } from './constants';
 
 // Helper to handle scroll to top on route change
@@ -70,6 +71,7 @@ const App: React.FC = () => {
               }
             />
 
+            <Route path="/article/croissance-2025" element={<ArticleGrowth />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
