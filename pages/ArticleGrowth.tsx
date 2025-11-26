@@ -15,11 +15,20 @@ const ArticleGrowth: React.FC = () => {
                     Comment faire pousser les cheveux rapidement <span className="text-gold-500">(2025)</span>
                 </h1>
 
-                <div className="prose prose-lg max-w-none text-gray-600 mb-12">
-                    <p className="text-xl leading-relaxed">
-                        Découvre les méthodes infaillibles pour maximiser la pousse de tes cheveux et stopper la casse définitivement.
-                        Voici le guide ultime, séparé en deux catégories essentielles.
-                    </p>
+                {/* Hero Background Section */}
+                <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-12 shadow-lg">
+                    <img
+                        src="/images/hair_growth_bg.png"
+                        alt="Hair Growth Background"
+                        className="w-full h-full object-cover brightness-75"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                        <div className="p-8 text-white">
+                            <p className="text-xl md:text-2xl font-light leading-relaxed">
+                                Découvre les méthodes infaillibles pour maximiser la pousse et stopper la casse définitivement.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Section 1: Cheveux Afro Naturels */}
@@ -32,8 +41,8 @@ const ArticleGrowth: React.FC = () => {
                         <TipCard
                             number={1}
                             title="Hydratation régulière"
-                            active="Utiliser un spray d’eau + aloe vera ou leave-in tous les 2–3 jours."
-                            reverse="Éviter les huiles seules sur cheveux secs → ça scelle la sécheresse au lieu d’hydrater."
+                            active="Utiliser un spray d'eau + aloe vera ou leave-in tous les 2–3 jours."
+                            reverse="Éviter les huiles seules sur cheveux secs → ça scelle la sécheresse au lieu d'hydrater."
                         />
                         <TipCard
                             number={2}
