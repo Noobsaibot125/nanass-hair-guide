@@ -40,7 +40,7 @@ export const LATEST_ARTICLES: Article[] = [
 export const HAIR_ARTICLES: Article[] = [
   { id: 'h1', category: 'Cheveux', title: 'Comment stopper la casse définitivement', description: 'Les secrets pour retenir la longueur.', imageUrl: '/images/hair_growth_guide.png' },
   { id: 'h2', category: 'Cheveux', title: 'Recette huile de croissance maison', description: 'Un mélange naturel facile à réaliser.', imageUrl: '/images/hair_growth_oil.png' },
-  { id: 'h3', category: 'Cheveux', title: 'Comment poser et entretenir une lace frontal', description: 'Le guide complet pour un résultat naturel.', imageUrl: '/images/lace_frontal_guide.png' },
+  { id: 'h3', category: 'Cheveux', title: 'Comment poser et entretenir une lace frontal', description: 'Le guide complet pour un résultat naturel.', imageUrl: '/images/lace_frontal_guide.png', link: '/article/pose-lace-frontal' },
   { id: 'h4', category: 'Cheveux', title: 'Routine Cheveux 4C', description: 'Hydratation et définition pour cheveux crépus.', imageUrl: '/images/afro_4c_hair.png' },
 ];
 

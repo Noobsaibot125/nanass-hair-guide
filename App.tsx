@@ -11,6 +11,7 @@ import AICoach from './components/AICoach';
 import ArticleGrowth from './pages/ArticleGrowth';
 import ArticleSkin from './pages/ArticleSkin';
 import ArticleNails from './pages/ArticleNails';
+import ArticleLace from './pages/ArticleLace';
 import { HAIR_ARTICLES, BODY_ARTICLES, NAIL_ARTICLES } from './constants';
 
 // Helper to handle scroll to top on route change
@@ -76,6 +77,7 @@ const App: React.FC = () => {
             <Route path="/article/croissance-2025" element={<ArticleGrowth />} />
             <Route path="/article/routine-peau-eclatante" element={<ArticleSkin />} />
             <Route path="/article/ongles-forts-7-jours" element={<ArticleNails />} />
+            <Route path="/article/pose-lace-frontal" element={<ArticleLace />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
