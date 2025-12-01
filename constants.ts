@@ -24,7 +24,8 @@ export const LATEST_ARTICLES: Article[] = [
     category: 'Corps',
     title: 'Routine peau éclatante pour femme noire',
     description: 'Des soins simples et efficaces pour un teint lumineux.',
-    imageUrl: '/images/skincare_routine.png'
+    imageUrl: '/images/skincare_routine.png',
+    link: '/article/routine-peau-eclatante'
   },
   {
     id: '3',
