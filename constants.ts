@@ -32,7 +32,8 @@ export const LATEST_ARTICLES: Article[] = [
     category: 'Ongles',
     title: 'Comment renforcer des ongles fragiles en 7 jours',
     description: 'Dites adieu aux ongles cassants avec cette routine.',
-    imageUrl: '/images/nail_care.png'
+    imageUrl: '/images/nail_care.png',
+    link: '/article/ongles-forts-7-jours'
   }
 ];
 
