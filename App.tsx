@@ -8,10 +8,21 @@ import Shop from './pages/Shop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import AICoach from './components/AICoach';
+
+// Original Articles
 import ArticleGrowth from './pages/ArticleGrowth';
 import ArticleSkin from './pages/ArticleSkin';
 import ArticleNails from './pages/ArticleNails';
 import ArticleLace from './pages/ArticleLace';
+
+// New Articles
+import ArticleOil from './pages/ArticleOil';
+import ArticleRoutine from './pages/ArticleRoutine';
+import ArticleScrub from './pages/ArticleScrub';
+import ArticleSpots from './pages/ArticleSpots';
+import ArticleWinter from './pages/ArticleWinter';
+import ArticleNailsPro from './pages/ArticleNailsPro';
+
 import { HAIR_ARTICLES, BODY_ARTICLES, NAIL_ARTICLES } from './constants';
 
 // Helper to handle scroll to top on route change
@@ -74,10 +85,20 @@ const App: React.FC = () => {
               }
             />
 
+            {/* Routes Articles */}
             <Route path="/article/croissance-2025" element={<ArticleGrowth />} />
             <Route path="/article/routine-peau-eclatante" element={<ArticleSkin />} />
             <Route path="/article/ongles-forts-7-jours" element={<ArticleNails />} />
             <Route path="/article/pose-lace-frontal" element={<ArticleLace />} />
+
+            {/* New Routes */}
+            <Route path="/article/huile-croissance" element={<ArticleOil />} />
+            <Route path="/article/routine-cheveux-casse" element={<ArticleRoutine />} />
+            <Route path="/article/gommage-cafe" element={<ArticleScrub />} />
+            <Route path="/article/taches-sombres" element={<ArticleSpots />} />
+            <Route path="/article/hydratation-hiver" element={<ArticleWinter />} />
+            <Route path="/article/manucure-pro" element={<ArticleNailsPro />} />
+
             <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

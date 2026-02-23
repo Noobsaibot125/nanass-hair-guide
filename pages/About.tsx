@@ -22,7 +22,7 @@ const About: React.FC = () => {
           </p>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             À travers ce site, je partage mes meilleures astuces pour t’aider à être belle de la tête aux pieds, 
-            avec des conseils simples, naturels et adaptés à toutes. Que tu aies des cheveux 4C, une peau sensible 
+            avec des conseils simples, naturels et adaptés à toutes. Que tu aies des cheveux, une peau sensible 
             ou que tu cherches juste à te chouchouter, tu es au bon endroit.
           </p>
           <div className="bg-gold-50 p-6 rounded-lg border-l-4 border-gold-500">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Scissors, Droplets, Shield, Star, Check } from 'lucide-react';
+import { ArrowLeft, Scissors, Droplets, Shield, Star, Check, Key, Target, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ArticleLace: React.FC = () => {
@@ -177,6 +177,131 @@ const ArticleLace: React.FC = () => {
                         </div>
                         <div className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
                             <Check className="text-red-500" /> <span className="text-gray-800">Hydratation régulière = brillance</span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Related Articles Section */}
+                <section className="mt-20 border-t border-gray-100 pt-16">
+                    <h2 className="font-serif text-3xl font-bold mb-10 text-center text-gray-900">
+                        D'autres guides pour sublimer tes cheveux
+                    </h2>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Article 1: Comment stopper la casse */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/hair_growth_guide.png" alt="Stopper la casse" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CHEVEUX</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 1. Comment stopper la casse définitivement</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Cet article explique comment arrêter la casse des cheveux en protégeant la fibre capillaire.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Key size={16} className="text-gold-500" /> Points essentiels :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Gérer l’hydratation régulièrement</li>
+                                            <li>Éviter la manipulation excessive</li>
+                                            <li>Limiter la chaleur (fer, sèche-cheveux)</li>
+                                            <li>Faire des soins protéinés</li>
+                                            <li>Utiliser des coiffures protectrices</li>
+                                            <li>Protéger les cheveux la nuit (satin)</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-gold-50 p-3 rounded-lg">
+                                        <div className="flex items-center gap-2 font-bold text-gold-700 text-xs mb-1">
+                                            <Target size={14} /> Objectif :
+                                        </div>
+                                        <p className="text-xs text-gold-800">Empêcher les cheveux de se casser et aider à retenir la longueur.</p>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/croissance-2025" className="inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Article 2: Recette huile de croissance */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/hair_growth_oil.png" alt="Huile de croissance" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CHEVEUX</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 2. Recette huile de croissance maison</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Cet article donne une recette simple pour faire une huile pour accélérer la pousse.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Key size={16} className="text-gold-500" /> Points essentiels :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Utilisation d’huiles naturelles</li>
+                                            <li>Ajout d’herbes ou huiles essentielles</li>
+                                            <li>Explication de la préparation</li>
+                                            <li>Application sur le cuir chevelu</li>
+                                            <li>Fréquence d’utilisation</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-gold-50 p-3 rounded-lg">
+                                        <div className="flex items-center gap-2 font-bold text-gold-700 text-xs mb-1">
+                                            <Target size={14} /> Objectif :
+                                        </div>
+                                        <p className="text-xs text-gold-800">Stimuler la circulation du cuir chevelu et favoriser la croissance.</p>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/huile-croissance" className="inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Article 3: Routine cheveux cassé */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/afro_4c_hair.png" alt="Routine 4C" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CHEVEUX</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 3. Routine cheveux cassé</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Une routine adaptée aux cheveux très crépus (type 4C) pour les garder forts et hydratés.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Key size={16} className="text-gold-500" /> Points essentiels :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Laver avec un shampoing doux</li>
+                                            <li>Soin profond (masque) chaque semaine</li>
+                                            <li>Hydrater avec la méthode LCO ou LOC</li>
+                                            <li>Utiliser des produits épais</li>
+                                            <li>Démêler sur cheveux mouillés</li>
+                                            <li>Coiffures protectrices régulières</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-gold-50 p-3 rounded-lg">
+                                        <div className="flex items-center gap-2 font-bold text-gold-700 text-xs mb-1">
+                                            <Target size={14} /> Objectif :
+                                        </div>
+                                        <p className="text-xs text-gold-800">Hydrater, assouplir et réduire la casse des cheveux.</p>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/routine-cheveux-casse" className="inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>

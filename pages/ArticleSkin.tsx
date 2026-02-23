@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Droplets, Sun, Moon, Clock, Check, X } from 'lucide-react';
+import { ArrowLeft, Droplets, Sun, Moon, Clock, Check, X, Search, Sparkles, Wind, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ArticleSkin: React.FC = () => {
@@ -192,6 +192,108 @@ const ArticleSkin: React.FC = () => {
                                 <RoutineRow day="Dimanche" activity="Bain relax + nutrition de la peau au karité" isLast />
                             </tbody>
                         </table>
+                    </div>
+                </section>
+
+                {/* Related Body Guides Section */}
+                <section className="mt-20 border-t border-gray-100 pt-16">
+                    <h2 className="font-serif text-3xl font-bold mb-10 text-center text-gray-900">
+                        D'autres secrets pour prendre soin de ton corps
+                    </h2>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Article 1: Gommage café + huile */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/coffee_body_scrub.png" alt="Gommage café" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CORPS</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 1. Gommage café + huile = peau douce</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Un gommage naturel, économique et très efficace pour une peau lisse comme un bébé.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Search size={16} className="text-gold-500" /> Ce que l’article explique :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Le café exfolie en douceur</li>
+                                            <li>Enlève les peaux mortes & impuretés</li>
+                                            <li>L'huile nourrit et adoucit</li>
+                                            <li>Rend la peau lumineuse et lisse</li>
+                                            <li>Corps, pieds, mains et visage</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/gommage-cafe" className="mt-auto inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Article 2: Comment enlever les taches sombres */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/dark_spots_treatment.png" alt="Taches sombres" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CORPS</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 2. Comment enlever les taches sombres</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Solutions naturelles pour traiter l’hyperpigmentation : taches noires, cicatrices, zones sombres.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Search size={16} className="text-gold-500" /> Ce que l’article explique :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Remèdes naturels éclaircissants</li>
+                                            <li>Citron, curcuma, aloe vera, rose musquée</li>
+                                            <li>Importance de la régularité</li>
+                                            <li>Nécessité d'une protection solaire</li>
+                                            <li>Conseils de prévention</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/taches-sombres" className="mt-auto inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Article 3: Hydratation intense pour l’hiver */}
+                        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                            <div className="h-48 overflow-hidden">
+                                <img src="/images/winter_skin_hydration.png" alt="Hydratation hiver" className="w-full h-full object-cover" />
+                            </div>
+                            <div className="p-6 flex-grow">
+                                <div className="text-xs font-bold text-gold-500 uppercase mb-2">CORPS</div>
+                                <h3 className="text-xl font-bold mb-3 text-gray-900">🌟 3. Hydratation intense pour l’hiver</h3>
+                                <p className="text-sm text-gray-600 mb-4 italic">Comment protéger et hydrater la peau lorsque le froid la rend sèche et rugueuse.</p>
+
+                                <div className="space-y-4 mb-6">
+                                    <div>
+                                        <div className="flex items-center gap-2 font-bold text-gray-800 text-sm mb-2">
+                                            <Search size={16} className="text-gold-500" /> Ce que l’article explique :
+                                        </div>
+                                        <ul className="text-xs text-gray-600 space-y-1 ml-6 list-disc">
+                                            <li>Crèmes riches (karité, cacao)</li>
+                                            <li>Sceller l'hydratation après la douche</li>
+                                            <li>Éviter l'eau trop chaude</li>
+                                            <li>S'hydrater de l'intérieur (eau)</li>
+                                            <li>Protéger zones sensibles (lèvres, mains)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <Link to="/article/hydratation-hiver" className="mt-auto inline-flex items-center text-sm font-bold text-gray-900 hover:text-gold-600 transition group">
+                                    Lire l'article <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

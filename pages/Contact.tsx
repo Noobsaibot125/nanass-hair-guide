@@ -17,11 +17,11 @@ const Contact: React.FC = () => {
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="text-gold-500" />
-              <span>+33 6 12 34 56 78</span>
+              <span>+225 0506485403</span>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="text-gold-500" />
-              <span>Paris, France</span>
+              <span>Abidjan, Côte d'ivoire</span>
             </div>
           </div>
           <div className="mt-12">
