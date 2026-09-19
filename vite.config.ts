@@ -13,6 +13,9 @@ export default defineConfig(({ mode }) => {
         '.ngrok.io',
         'localhost',
       ],
+      watch: {
+        usePolling: true,
+      },
     },
     plugins: [react()],
     define: {
