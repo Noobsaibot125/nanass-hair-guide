@@ -13,11 +13,8 @@ const Navbar: React.FC = () => {
 
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <NavLink to="/" className="flex items-center gap-3 font-serif text-2xl md:text-3xl text-gold-400 font-bold tracking-wider">
-              <img src="/images/logo.png" alt="Nanass Logo" className="h-10 w-auto object-contain" />
-              <span>
-                Nanass <span className="text-white text-lg font-light">Hair & Guide</span>
-              </span>
+            <NavLink to="/" className="flex items-center">
+              <img src="/images/logo.png" alt="Nanass Logo" className="h-12 md:h-14 w-auto object-contain" />
             </NavLink>
           </div>
 
